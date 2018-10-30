@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Event Center</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.5.6/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.5.6/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.6/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.6/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.6/firebase-storage.js"></script>
+    <script defer src="/__/firebase/5.5.6/firebase-firestore.js"></script>
+
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+<body>
+  <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+  <!--           <a href="index.html" class="pull-left visible-md visible-lg" alt="logo">
+              <div id="logo-img" alt="Logo image"></div>
+            </a> -->
+  
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Pokemon Event Center</h1></a>
+            </div>
+  
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs active">
+                <a href="index.html">
+                  <span id="home_gly" class="glyphicon glyphicon-home"></span> Home</a>
+              </li>
+              <li id="navMenuButton">
+                <a href="#" onclick="$dc.loadMenuCategories();">
+                  <span class="glyphicon glyphicon-heart"></span><br class="hidden-xs"> Menu</a>
+              </li>
+              <li id="navMenuButton">
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+              </li>
+              <li id="navMenuButton">
+                <a href="#">
+                  <span class="glyphicon glyphicon-flag"></span><br class="hidden-xs"> Awards</a>
+              </li>
+              <!-- <li id="phone" class="hidden-xs">
+                <a href="tel:410-602-5008">
+                  <span>410-602-5008</span></a><div>* We Deliver</div>
+              </li> -->
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>    
+    <div id="main-content" class="container"></div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+            Sun: 10:15am - 2:30pm<br>
+            Mon-Fri: 10:15am - 8:00pm<br>
+            Saturday Varies
+            <hr class="visible-xs">
+          </section>
+  
+          <section id="help" class="col-sm-4">
+            <span>Contact:</span><br>
+            Pokemon World #001<br>
+            <p>Cell: ###-####-####.</p>
+            <hr class="visible-xs">
+          </section>
+  
+          <section id="testimonials" class="col-sm-4">
+            <p>"This is a dream come true for any Pokemon fan. They have an amazing variety of Pokemon merchandise but just being here is an incredible experience. "</p>
+            <p>"Definitely worth stopping by if you're a fan of Pokemon. There's all sorts of merch available and at different price points."</p>
+          </section>
+        </div>
+        <!-- <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div> -->
+      </div>
+    </footer>
+  
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script> 
+    <!-- <script src="app2.js"></script> -->
+  </body>
+</html>

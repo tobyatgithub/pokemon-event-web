@@ -1,0 +1,99 @@
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header-nav{
+	height:120px;
+}
+
+/*
+#logo-img {
+  background: url('../images/pokemon.jpeg') no-repeat;
+  width: 400px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}*/
+
+.container .jumbotron {
+  background: url('../images/pokemon.jpeg');
+	/*background: url('../images/cover_img.jpeg') no-repeat;*/
+	width: 80%;
+	height: 575px;
+	margin: auto;
+}
+
+
+#navbarToggle{
+	margin-top: 40px; 
+	margin-right: 40px;
+}
+
+#navMenuButton{
+	margin-top: 25px;
+}
+
+#nav-list a span {
+    font-size: 1.5em;   
+}
+
+#nav-list a{
+	text-align: center;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  background-color: #0000b3;
+}  
+
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/*#menu-tile {
+  background: url('../images/menu_cover.jpg') no-repeat;
+  background-position: center;
+}*/
+#specials-tile{
+  background: url("/images/special2.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 330px 220px;
+
+}
+
+
+#menu-tile img {
+    height: auto;
+    width: 100%;
+    
+}
+
+#button {
+  padding:10px;
+  margin-bottom:50px;
+}
