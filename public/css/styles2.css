@@ -79,7 +79,7 @@ img {
   background-position: center;
 }*/
 #specials-tile{
-  background: url("/images/special2.jpg");
+  background: url("../images/special2.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-size: 330px 220px;
