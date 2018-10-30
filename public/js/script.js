@@ -1,8 +1,6 @@
 console.log("UH");
 
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
-
-  // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
+$(function () { 
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 768) {
@@ -15,8 +13,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtmlUrl = "snippets/home-snippet.html";
+// retrieve data from firebase
 var allCategoriesUrl ="https://fir-pokemon.firebaseio.com/categories.json";
+var homeHtmlUrl = "snippets/home-snippet.html";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
@@ -66,11 +65,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
-    buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
-    true); // Explicitely setting the flag to get JSON from server processed into an object literal
+    buildAndShowHomeHTML, 
+    true); 
 });
-// *** finish **
-
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
@@ -94,7 +91,8 @@ console.log("humm..");
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
     },
-    false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
+    false); 
+    // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
 
@@ -122,10 +120,11 @@ dc.loadMenuCategories = function () {
 // dc.loadMenuItems = function (chosenCategoryShortName){
 //   console.log("ready to load menu items, show chosenCategoryShortName", chosenCategoryShortName)
 // }
+
 dc.loadMenuItems = function () {
   for (var i=0; i < 10; i ++){  
     var xhr = new XMLHttpRequest();
-
+    console.log("reading data from firebase...")
     xhr.open('GET', "https://fir-pokemon.firebaseio.com/categories.json",true);
 
     xhr.onload=function(){

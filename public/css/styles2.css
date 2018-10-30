@@ -13,7 +13,7 @@ img {
 } */
 
 .container .jumbotron {
-  background: url('../images/pokemon.jpeg');
+  /* background: url('../images/pokemon.jpeg'); */
 	/*background: url('../images/cover_img.jpeg') no-repeat;*/
 	width: 80%;
 	height: 575px;
