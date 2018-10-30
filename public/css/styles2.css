@@ -8,17 +8,9 @@ img {
     max-height: 100%;
 }
 
-#header-nav{
+/* #header-nav{
 	height:120px;
-}
-
-/*
-#logo-img {
-  background: url('../images/pokemon.jpeg') no-repeat;
-  width: 400px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}*/
+} */
 
 .container .jumbotron {
   background: url('../images/pokemon.jpeg');
@@ -74,10 +66,7 @@ img {
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-/*#menu-tile {
-  background: url('../images/menu_cover.jpg') no-repeat;
-  background-position: center;
-}*/
+
 #specials-tile{
   background: url("../images/special2.jpg");
   background-repeat: no-repeat;
