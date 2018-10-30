@@ -164,7 +164,7 @@ dc.loadMenuItems = function () {
             + '<span>Find Yours!</span>'+
             '<ul>' +
             // '<li> ID:' + picked_one.id + '</li>'+
-            '<li>'+picked_one.name+' is Best for You!</li>'+
+            '<li style="list-style: none;">'+picked_one.name+' is Best for You!</li>'+
             '</ul>' +
             
             '</div>;'
