@@ -135,7 +135,7 @@ dc.loadMenuItems = function () {
             var picked_one = pokemon_list[randomArrayIndex];
             var output = "";
             output += '<div class = "special-picked" style="background-color:white">' +
-            '<img src = "'+picked_one.image+'"margin=auto width = "92%" height="92%">'
+            '<img src = "'+picked_one.image+'"margin="auto" width = "75%" height="75%">'
             + '<span>Find Yours!</span>'+
             // + '<ul>' +
             // '<li> Name:'+picked_one.name+'</li>'+
@@ -159,7 +159,7 @@ dc.loadMenuItems = function () {
             var picked_one = pokemon_list[randomArrayIndex];
             var output = "";
             output += '<div class = "special-picked" style="background-color:white">' +
-            '<img src = "'+picked_one.image+'"margin=auto width = "82%" height="82%">'
+            '<img src = "'+picked_one.image+'"margin="auto" width = "67%" height="67%">'
             + '<span>Find Yours!</span>'+
             '<ul>' +
             // '<li> ID:' + picked_one.id + '</li>'+
