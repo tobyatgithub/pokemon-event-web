@@ -120,9 +120,16 @@ dc.loadMenuCategories = function () {
 // dc.loadMenuItems = function (chosenCategoryShortName){
 //   console.log("ready to load menu items, show chosenCategoryShortName", chosenCategoryShortName)
 // }
+function wait(ms){
+  var start = new Date().getTime();
+  var end = start;
+  while(end < start + ms) {
+    end = new Date().getTime();
+ }
+}
 
 dc.loadMenuItems = function () {
-  for (var i=0; i < 10; i ++){  
+  for (var i=0; i < 10; i ++){
     var xhr = new XMLHttpRequest();
     console.log("reading data from firebase...")
     xhr.open('GET', "https://fir-pokemon.firebaseio.com/categories.json",true);
@@ -143,9 +150,13 @@ dc.loadMenuItems = function () {
             '</div>;'
             document.getElementById('specials-tile').innerHTML = output;
         }
+    console.log('running load menu items, wait 50ms');
+    wait(50);
     }
 
-    xhr.send();}
+    xhr.send();
+    
+  }
 
     var xhr = new XMLHttpRequest();
 
